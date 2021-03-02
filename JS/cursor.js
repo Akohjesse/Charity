@@ -13,7 +13,7 @@ this.addEventListener("mousemove", function(e){
 ;
 
 const cursor = curDot({
-    zIndex: 2,
+    zIndex: 10,
     diameter: 50,
     borderWidth: 1,
     borderColor: 'Orange',

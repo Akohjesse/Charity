@@ -4,10 +4,8 @@
   border-radius: 100%;
   border: 1px solid #f56d7a;
   background: #f63c4e;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
-  -webkit-transition: 0 0.1 ease-in;
   transition: 0 0.1 ease-in;
   z-index: 15;
 }
@@ -15,4 +13,3 @@
 .nav-hover {
   background: "#5e1212";
 }
-/*# sourceMappingURL=additiv.css.map */

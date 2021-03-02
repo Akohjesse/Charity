@@ -18,23 +18,35 @@ body{
     cursor:none;
     overflow-x:hidden ;
 }
-.menu{
-    background:rgb(145, 12, 25);
-    padding:5px;
-    display:none;
-    position: absolute;;
-    width:80px;
+.float-in{
+    background:#282b29;
+    padding:10px;
+    position:fixed;
+    height:70vh;
+    z-index:9;
+    top:30%;
+    box-shadow:4px 4px 5px grey;
+    left:0%;
+    width:11%;
+    display:flex;
+    justify-content: center;
+    cursor: pointer;
+    border-bottom-right-radius: 30px;
+    
     nav{
         ul{
             li{
                 list-style-type: none;
-                margin:20px 0;
-              
+                margin:30px 0;
+                 
                 font-size: 0.9em;
                 color:white;
             }
         }
     }
+}
+.float-none{
+    display:none;
 }
 .toggleMenu{
     margin:30px 0px;
@@ -43,14 +55,16 @@ body{
         color:white;
         padding:15px;
         border-radius: 100%;
-        background:lightgreen;
-        box-shadow: 0px 0px 2px 10px #ebe9e8;
+        background:rgb(76, 173, 76);
+        transition: 0.5s ease-in-out;
+        // box-shadow: 0px 0px 2px 10px #ffffff;
     }
     width:auto;
     position: fixed;
-    top:80%;
-    left:5%;
+    top:78%;
+    left:4%;
     border-radius: 8px;
+    z-index:11;
     
    
 }
@@ -75,6 +89,7 @@ main{
                 color: #0b2238;
                 span{
                     margin:10px 0;
+                    z-index:11;
                 }
                
             }
@@ -250,12 +265,6 @@ main{
             height:2.7rem;
             }
         }
-    }
-    .box-1, .box-3{
-        button{
-            visibility: hidden;
-        }
-        border:hidden;
     }
 }
 @keyframes rotate {

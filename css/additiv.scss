@@ -1,17 +1,4 @@
-.cursor{
-    width:50px;
-    height:50px;
-    border-radius: 100%;
-    // background:transparent;
-    border:1px solid #fabe6f;
-    position: absolute;
-    transform:translate(-50%, -50%);
-    transform-origin:100% 100%;
-    transition:all 0.2s ease-in;
-    
-    scroll-behavior: smooth;
-    z-index:-1;
-}
+
 .small-cursor{
     width:8px;
     height:8px;
@@ -21,7 +8,7 @@
     transform:translate(-50%, -50%);
     position: absolute;
     transition: 0 0.1 ease-in;
-    z-index:10;
+    z-index:15;
 }
 .nav-hover{
     background:"#5e1212";
