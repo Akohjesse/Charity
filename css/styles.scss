@@ -1198,6 +1198,10 @@ footer{
     }
 }
 @media (max-width:490px){
+    .toggleMenu{
+        padding:18px;
+        font-size: 1.7em;
+    }
     main{
         .begin-txt{
             .intro-text{
@@ -1272,7 +1276,11 @@ footer{
            }
         }
      }
+     .message2{
+         margin:20% auto;
+     }
      .howto{
+        margin:20% auto 15% auto;
          width:95%;
          height:80vh;
          .text{
@@ -1316,6 +1324,7 @@ footer{
        }
     }
     footer{
+        margin:15% auto;
        flex-direction: column;
        display: flex;
     }
@@ -1364,16 +1373,31 @@ footer{
         }
     }
     .float-in{
-        width:25%;
+        width:28%;
     }
   
     .swiper{
         margin:9% auto;
+        .elnt{
+            .topic{
+                margin-right:9%;
+            }
+        }
     }
 }
 
 @media (max-width:390px){
-
+main{
+    .begin-txt{
+        .intro-text{
+            .text-h1{
+                h1{
+                    font-size:1.99em;
+                }
+            }
+        }
+    }
+}
     .location{
         display: none;
     }
@@ -1413,5 +1437,8 @@ footer{
     display: flex;
     flex-direction:column;
     text-align: center;
+}
+.float-in{
+    width:30%;
 }
 }
