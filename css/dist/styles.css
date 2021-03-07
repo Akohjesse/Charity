@@ -987,6 +987,7 @@ footer form i {
   }
   .section-3 .grid .table .box p {
     font-size: 0.8em;
+    width: 100%;
     margin: 4px 0px;
   }
 
@@ -1011,8 +1012,16 @@ footer form i {
     font-size: 1.2em;
     margin: 10px 0px;
   }
+  .featured-stories .carousel {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 45%);
+  }
+  .featured-stories .carousel .image {
+    width: 100%;
+  }
   .featured-stories .carousel .image .text {
-    transform: translateY(4em);
+    transform: translateY(5em);
   }
   .featured-stories .carousel .image .text h3 {
     margin: 4px 0px;
@@ -1110,5 +1119,92 @@ footer form i {
 @media (max-width: 600px) {
   .columns {
     flex-direction: column;
+  }
+  .columns .row {
+    margin: 30px;
+  }
+
+  .section-3 {
+    flex-direction: column-reverse;
+  }
+  .section-3 div {
+    width: 100%;
+  }
+  .section-3 .grid {
+    width: 98%;
+  }
+  .section-3 .grid h3 {
+    font-size: 1.4em;
+  }
+  .section-3 .grid .table {
+    margin: 30px 0px;
+  }
+  .section-3 .grid .table .box p {
+    width: 70%;
+  }
+
+  .featured-stories .carousel {
+    flex-direction: column;
+  }
+
+  .howto {
+    height: 80vh;
+    background-size: 250px, 100px;
+    background-position: left, 95%;
+  }
+
+  .message div {
+    width: 80%;
+  }
+  .message div h2 {
+    font-size: 1.4rem;
+  }
+
+  .knowledge {
+    width: 95%;
+  }
+  .knowledge .class h3 {
+    font-size: 1em;
+  }
+
+  .location {
+    width: 95%;
+  }
+  .location .img img {
+    height: 50vh;
+  }
+}
+@media (max-width: 490px) {
+  main .begin-txt .intro-text {
+    max-width: 90%;
+  }
+  main .begin-txt .intro-text .text-h1 h1 {
+    font-size: 2.5em;
+  }
+  main .begin-txt .img-container {
+    width: 90%;
+  }
+
+  #latest {
+    display: flex;
+    flex-direction: column;
+  }
+  #latest .pre-head h3 {
+    margin: 10px 0px;
+    font-size: 1.5em;
+  }
+  #latest .cardNews {
+    width: 80%;
+  }
+  #latest .cardNews img {
+    height: 30vh;
+  }
+
+  .message div {
+    width: 90%;
+  }
+
+  .section-3 .grid .table {
+    width: 100%;
   }
 }

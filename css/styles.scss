@@ -994,6 +994,7 @@ footer{
                 .box{
                     p{
                         font-size: 0.8em;
+                        width:100%;
                         margin:4px 0px;
                     }
                 }
@@ -1020,15 +1021,20 @@ footer{
         }
     }
     .featured-stories{
+        
         width:95%;
         h2{
             font-size: 1.2em;
             margin:10px 0px;
         }
         .carousel{
+            display: grid;
+            grid-gap:10px;
+            grid-template-columns: repeat(2, 45%);
             .image{
+                width:100%;
                 .text{
-                    transform: translateY(4em);
+                    transform: translateY(5em);
                     h3{
                         margin:4px 0px;
                         font-size:0.9em;
@@ -1127,5 +1133,107 @@ footer{
 @media (max-width:600px){
     .columns{
         flex-direction:column;
+        .row{
+            margin:30px;
+        }
+    }
+    .section-3{
+        flex-direction: column-reverse;
+        div{
+            width:100%;
+        }
+        .grid{
+            width:98%;
+            h3{
+                font-size: 1.4em;
+            }
+            .table{
+                margin:30px 0px;
+                .box{
+                    p{
+                        width:70%;
+                    }
+                }
+            }
+        }
+    }
+    .featured-stories{
+    .carousel{
+        flex-direction: column;
+    }
+    }
+    .howto{
+        height:80vh;
+        background-size:250px, 100px;
+        background-position: left, 95%;
+    }
+    .message{
+        div{
+            width:80%;
+            h2{
+                font-size:1.4rem;
+            }
+        }
+    }
+    .knowledge{
+        width: 95%;
+        .class{
+            h3{
+                font-size:1em;
+            }
+        }
+    }
+    .location{
+        width:95%;
+        .img{
+           img{
+               height:50vh;
+           }
+        }
+    }
+}
+@media (max-width:490px){
+    main{
+        .begin-txt{
+            .intro-text{
+                max-width:90%;
+                .text-h1{
+                    h1{
+                        font-size:2.5em;
+                    }
+                }
+            }
+            .img-container{
+                width:90%;
+            }
+        }
+    }
+    #latest{
+        display:flex;
+        flex-direction: column;
+        .pre-head{
+            h3{
+                margin:10px 0px;
+                font-size: 1.5em;
+            }
+        }
+        .cardNews{
+            width:80%;
+            img{
+                height:30vh;
+            }
+        }
+    }
+    .message{
+        div{
+            width:90%;
+        }
+    }
+    .section-3{
+        .grid{
+            .table{
+                width:100%;
+            }
+        }
     }
 }
