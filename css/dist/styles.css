@@ -813,6 +813,10 @@ footer form i {
   }
 }
 @media (max-width: 850px) {
+  .float-in {
+    width: 18%;
+  }
+
   main .begin-txt .intro-text .copy-write {
     margin: 20px 0px;
   }
@@ -845,6 +849,17 @@ footer form i {
     grid-auto-rows: repeat(2, 20%);
     grid-gap: 15px;
     grid-template-columns: repeat(2, 40%);
+  }
+
+  .featured-stories .carousel .image {
+    padding: 15px;
+  }
+  .featured-stories .carousel .image .text {
+    transform: translateY(4em);
+  }
+  .featured-stories .carousel .image .text h3 {
+    margin: 8.5px;
+    font-size: 1em;
   }
 }
 @media (max-width: 800px) {
@@ -916,7 +931,7 @@ footer form i {
     width: 90%;
     margin: 0px auto;
     grid-gap: 5px;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 48%);
     height: auto;
     padding: 10px 5px;
   }
@@ -961,11 +976,11 @@ footer form i {
     justify-content: space-between;
   }
   .section-3 div {
-    width: 50%;
+    width: 40%;
   }
   .section-3 .grid {
     margin-left: 0px;
-    width: 50%;
+    width: 55%;
   }
   .section-3 .grid .table {
     display: flex;
@@ -978,8 +993,122 @@ footer form i {
   .swiper {
     width: 95%;
   }
+  .swiper .elnt .topic .txt {
+    width: auto;
+  }
+  .swiper .elnt .topic .icon {
+    margin-right: 7%;
+  }
   .swiper .elnt .topic .icon i {
-    padding: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+  }
+
+  .featured-stories {
+    width: 95%;
+  }
+  .featured-stories h2 {
+    font-size: 1.2em;
+    margin: 10px 0px;
+  }
+  .featured-stories .carousel .image .text {
+    transform: translateY(4em);
+  }
+  .featured-stories .carousel .image .text h3 {
+    margin: 4px 0px;
+    font-size: 0.9em;
+  }
+
+  .howto {
+    width: 95%;
+    height: 90vh;
+    margin: 10% auto 3% auto;
+    background-size: 400px, 150px;
+    background-position: -10%, 90%;
+  }
+  .howto .text {
+    max-width: 60%;
+  }
+  .howto .text h1 {
+    font-size: 1.6rem;
+  }
+  .howto .btn {
+    margin: 20px auto;
+  }
+  .howto .btn button:nth-child(1) {
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.6em;
+    border-radius: 15px;
+  }
+  .howto .btn button:nth-child(2) {
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.6em;
+    border-radius: 15px;
+  }
+
+  .knowledge {
+    width: 97%;
+    grid-gap: 30px;
+    grid-template-columns: 30% 30% 30%;
+  }
+  .knowledge .class i {
+    font-size: 1.2em;
+  }
+  .knowledge .class h3 {
+    font-size: 1.2em;
+    margin: 14px 0px;
+  }
+  .knowledge .class p {
+    font-size: 0.8em;
+    line-height: 21px;
+  }
+
+  .location {
+    width: 95%;
+  }
+  .location h2 {
+    font-size: 1.2em;
+  }
+  .location .img {
+    transform: translateY(-20px);
+  }
+  .location .img .dot {
+    height: 10px;
+    width: 10px;
+  }
+  .location .img .dot:nth-child(3) {
+    display: none;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 95%;
+  }
+  footer div {
+    margin: 0 20 20 0px;
+  }
+  footer .salute {
+    max-width: 100%;
+  }
+  footer .salute p {
     font-size: 1em;
+  }
+  footer h3 {
+    font-size: 1.1em;
+  }
+  footer .subscribe {
+    grid-row: 1/2;
+  }
+
+  .float-in {
+    width: 18%;
+  }
+}
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
   }
 }
