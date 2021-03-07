@@ -1194,6 +1194,7 @@ footer form i {
   #latest {
     display: flex;
     flex-direction: column;
+    margin: 15% auto;
   }
   #latest .pre-head h3 {
     margin: 10px 0px;
@@ -1306,11 +1307,11 @@ footer form i {
   }
 
   main {
-    margin: 20px auto;
+    margin: 30px auto;
   }
 
   .message {
-    width: 95%;
+    width: 100%;
   }
   .message div {
     width: 100%;

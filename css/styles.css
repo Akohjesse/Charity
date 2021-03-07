@@ -1391,6 +1391,7 @@ footer form i {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 15% auto;
   }
   #latest .pre-head h3 {
     margin: 10px 0px;
@@ -1508,10 +1509,10 @@ footer form i {
     height: 60vh;
   }
   main {
-    margin: 20px auto;
+    margin: 30px auto;
   }
   .message {
-    width: 95%;
+    width: 100%;
   }
   .message div {
     width: 100%;
