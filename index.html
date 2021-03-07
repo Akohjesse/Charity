@@ -32,14 +32,16 @@
         </nav>
     </div>
 
+ 
     <div class="container">
         <main>
                 <div class="container begin-txt">
+        
                     <div class="intro-text begin">
                         <div class="text-h1">
                             <h1>
-                                <span>Together</span> <br>
-                                <span>We Can Change</span> <br>
+                                <span>Together</span> <br class="nbs">
+                                <span>We Can Change</span>  <br class="nbs">
                                 <span>Our World</span>
                             </h1>
                        
@@ -57,6 +59,16 @@
                     </div>
                 </div>
         </main>
+        <script>
+            let br;
+            br = document.querySelectorAll('.nbs');
+           if(window.innerWidth <= 768)
+            for(i=0; i<br.length; i++){
+             br[i].remove();
+    }
+        </script>
+    
+
         <section id="latest">
             <div class="pre-head">
                <small>Latest</small>
