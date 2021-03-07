@@ -1193,6 +1193,9 @@ footer{
            }
         }
     }
+    .float-in{
+        width:20%;
+    }
 }
 @media (max-width:490px){
     main{
@@ -1287,6 +1290,9 @@ footer{
     footer{
        flex-direction: column;
        display: flex;
+    }
+    .float-in{
+        width:22%;
     }
 }
 @media (max-width:430px){

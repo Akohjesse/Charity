@@ -1368,6 +1368,9 @@ footer form i {
   .location .img img {
     height: 50vh;
   }
+  .float-in {
+    width: 20%;
+  }
 }
 
 @media (max-width: 490px) {
@@ -1465,6 +1468,9 @@ footer form i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .float-in {
+    width: 22%;
   }
 }
 

@@ -1175,6 +1175,10 @@ footer form i {
   .location .img img {
     height: 50vh;
   }
+
+  .float-in {
+    width: 20%;
+  }
 }
 @media (max-width: 490px) {
   main .begin-txt .intro-text {
@@ -1261,6 +1265,10 @@ footer form i {
   footer {
     flex-direction: column;
     display: flex;
+  }
+
+  .float-in {
+    width: 22%;
   }
 }
 @media (max-width: 430px) {
