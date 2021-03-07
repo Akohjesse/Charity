@@ -26,5 +26,5 @@ cursor.over(".img-container img", {
   scale: 2
 });
 cursor.over('.location .img img', {
-  scale: 9
+  scale: 7
 });

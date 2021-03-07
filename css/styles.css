@@ -1410,6 +1410,13 @@ footer form i {
   }
   .section-3 .grid .table {
     width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (49%)[2];
+        grid-template-columns: repeat(2, 49%);
+  }
+  .section-3 .grid .table .box p {
+    font-size: 0.9em;
   }
   .featured-stories .carousel {
     -webkit-box-orient: vertical;
@@ -1419,6 +1426,7 @@ footer form i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-items: center;
   }
   .featured-stories .carousel .image {
     width: 90%;
@@ -1440,6 +1448,20 @@ footer form i {
   }
   .howto .text {
     max-width: 90%;
+  }
+  .howto .btn button:nth-child(1) {
+    border-radius: 28px;
+    padding: 15px;
+    font-size: 0.9em;
+    width: 80%;
+    height: 2.7rem;
+  }
+  .howto .btn button:nth-child(2) {
+    border-radius: 28px;
+    padding: 15px;
+    font-size: 0.9em;
+    width: 80%;
+    height: 2.7rem;
   }
   .knowledge {
     width: 90%;
@@ -1475,6 +1497,12 @@ footer form i {
 }
 
 @media (max-width: 430px) {
+  .location {
+    display: none;
+  }
+  #latest .cardNews {
+    width: 100%;
+  }
   .howto {
     background: none;
     height: 60vh;
@@ -1488,13 +1516,68 @@ footer form i {
   .message div {
     width: 100%;
   }
+  .featured-stories {
+    text-align: center;
+  }
+  .featured-stories h2 {
+    font-weight: 600;
+  }
+  .featured-stories .carousel {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .featured-stories .carousel .image {
     height: 40vh;
-    width: 60;
+    width: 80%;
   }
   .featured-stories .carousel .image .text {
     -webkit-transform: translateY(7em);
             transform: translateY(7em);
+    text-align: center;
+  }
+  .float-in {
+    width: 25%;
+  }
+  .swiper {
+    margin: 9% auto;
+  }
+}
+
+@media (max-width: 390px) {
+  .location {
+    display: none;
+  }
+  .howto .btn {
+    max-width: 80%;
+  }
+  .howto .btn button:nth-child(1) {
+    border-radius: 28px;
+    padding: 15px;
+    font-size: 0.9em;
+    width: 80%;
+    height: 2.7rem;
+  }
+  .howto .btn button:nth-child(2) {
+    border-radius: 28px;
+    padding: 15px;
+    font-size: 0.9em;
+    width: 80%;
+    height: 2.7rem;
+  }
+  .featured-stories .carousel .image .text {
+    -webkit-transform: translateY(1em);
+            transform: translateY(1em);
+  }
+  .knowledge {
+    margin: 10% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
 }

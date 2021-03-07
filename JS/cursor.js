@@ -12,7 +12,10 @@ this.addEventListener("mousemove", function(e){
 });
 ;
 
-const cursor = curDot({
+
+
+
+let cursor = curDot({
     zIndex: 10,
     diameter: 50,
     borderWidth: 1,
@@ -36,5 +39,5 @@ cursor.over(".img-container img", {
     scale:2,
 })
 cursor.over('.location .img img', {
-    scale:9,
+    scale:7,
 })

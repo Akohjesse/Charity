@@ -1241,6 +1241,13 @@ footer{
         .grid{
             .table{
                 width:100%;
+                display: grid;
+                grid-template-columns: repeat(2,49%);
+                .box{
+                    p{
+                        font-size:0.9em;
+                    }
+                }
             }
         }
     }
@@ -1248,6 +1255,7 @@ footer{
         .carousel{
             flex-direction: column;
             display: flex;
+          justify-items: center;
            .image{
                width:90%;
             .text{
@@ -1269,6 +1277,25 @@ footer{
          .text{
              max-width:90%;
          }
+        .btn   {
+            button{
+                &:nth-child(1){
+                    border-radius: 28px;
+                    padding:15px;
+                    font-size: 0.9em;
+                    width:80%;
+                    height:2.7rem;
+                }
+                &:nth-child(2){
+                    border-radius: 28px;
+                    padding:15px;
+                    font-size: 0.9em;
+                    width:80%;
+                    height:2.7rem;
+                }
+               
+            }
+        }
      }
      .knowledge{
          width:90%;
@@ -1296,9 +1323,18 @@ footer{
     }
 }
 @media (max-width:430px){
+    .location{
+        display: none;
+    }
+    #latest{
+        .cardNews{
+            width: 100%;
+        }
+    }
     .howto{
         background:none;
         height:60vh;
+
     }
     main{
         margin:20px auto;
@@ -1310,10 +1346,15 @@ footer{
         }
     }
     .featured-stories{
+        text-align: center;
+        h2{
+            font-weight: 600;
+        }
         .carousel{
+            align-items: center;
             .image{
                 height:40vh;
-                width:60;
+                width:80%;
                 .text{
                     transform: translateY(7em);
                     text-align: center;
@@ -1321,5 +1362,54 @@ footer{
         }
         }
     }
+    .float-in{
+        width:25%;
+    }
+  
+    .swiper{
+        margin:9% auto;
+    }
+}
 
+@media (max-width:390px){
+    .location{
+        display: none;
+    }
+    .howto{
+        .btn{
+            max-width:80%;
+            button{
+                &:nth-child(1){
+                    border-radius: 28px;
+                    padding:15px;
+                    font-size: 0.9em;
+                    width:80%;
+                    height:2.7rem;
+                }
+                &:nth-child(2){
+                    border-radius: 28px;
+                    padding:15px;
+                    font-size: 0.9em;
+                    width:80%;
+                    height:2.7rem;
+                }
+               
+            }
+        }
+    }
+  .featured-stories{
+      .carousel{
+          .image{
+              .text{
+                  transform: translateY(1em);
+              };
+          }
+      }
+  }
+  .knowledge{
+    margin:10% auto;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
 }
