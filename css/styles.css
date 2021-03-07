@@ -1232,16 +1232,18 @@ footer form i {
     margin: 20px auto;
   }
   .howto .btn button:nth-child(1) {
-    width: 6rem;
+    width: 15rem;
     height: 2rem;
-    font-size: 0.6em;
-    border-radius: 15px;
+    margin: 10px;
+    font-size: 0.9em;
+    border-radius: 10px;
   }
   .howto .btn button:nth-child(2) {
-    width: 6rem;
+    width: 15rem;
+    margin: 10px;
     height: 2rem;
-    font-size: 0.6em;
-    border-radius: 15px;
+    font-size: 0.9em;
+    border-radius: 10px;
   }
   .knowledge {
     width: 97%;
@@ -1392,16 +1394,102 @@ footer form i {
     font-size: 1.5em;
   }
   #latest .cardNews {
-    width: 80%;
+    width: 70%;
   }
   #latest .cardNews img {
     height: 30vh;
+  }
+  #latest .cardNews p {
+    font-size: 16px;
   }
   .message div {
     width: 90%;
   }
   .section-3 .grid .table {
     width: 100%;
+  }
+  .featured-stories .carousel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .featured-stories .carousel .image {
+    width: 90%;
+  }
+  .featured-stories .carousel .image .text {
+    -webkit-transform: translateY(3em);
+            transform: translateY(3em);
+    text-align: center;
+  }
+  .featured-stories .carousel .image .text small {
+    font-size: 0.9em;
+  }
+  .featured-stories .carousel .image .text h3 {
+    font-size: 1.2em;
+  }
+  .howto {
+    width: 95%;
+    height: 80vh;
+  }
+  .howto .text {
+    max-width: 90%;
+  }
+  .knowledge {
+    width: 90%;
+    -ms-grid-columns: (45%)[2];
+        grid-template-columns: repeat(2, 45%);
+  }
+  .location {
+    margin: 15% auto;
+    width: 90%;
+  }
+  .location .img {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  .location .img .dot {
+    display: none;
+  }
+  .location .img img {
+    height: auto;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 430px) {
+  .howto {
+    background: none;
+    height: 60vh;
+  }
+  main {
+    margin: 20px auto;
+  }
+  .message {
+    width: 95%;
+  }
+  .message div {
+    width: 100%;
+  }
+  .featured-stories .carousel .image {
+    height: 40vh;
+    width: 60;
+  }
+  .featured-stories .carousel .image .text {
+    -webkit-transform: translateY(7em);
+            transform: translateY(7em);
+    text-align: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */

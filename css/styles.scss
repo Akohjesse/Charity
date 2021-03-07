@@ -1059,16 +1059,18 @@ footer{
             margin:20px auto;
             button{
                 &:nth-child(1){
-                    width:6rem;
+                    width:15rem;
                     height: 2rem;
-                    font-size:0.6em;
-                    border-radius: 15px;
+                    margin:10px;
+                    font-size:0.9em;
+                    border-radius: 10px;
                 }
                 &:nth-child(2){
-                    width:6rem;
-                    height: 2rem;
-                    font-size:0.6em;
-                    border-radius: 15px;
+                    width:15rem;
+                    margin:10px;
+                    height:2rem;
+                    font-size:0.9em;
+                    border-radius: 10px;
                 }
             }
         }
@@ -1218,9 +1220,12 @@ footer{
             }
         }
         .cardNews{
-            width:80%;
+            width:70%;
             img{
                 height:30vh;
+            }
+            p{
+               font-size: 16px;
             }
         }
     }
@@ -1236,4 +1241,79 @@ footer{
             }
         }
     }
+    .featured-stories{
+        .carousel{
+            flex-direction: column;
+            display: flex;
+           .image{
+               width:90%;
+            .text{
+                transform: translateY(3em);
+                text-align: center;
+                small{
+                    font-size:0.9em;
+                }
+                h3{
+                    font-size: 1.2em;
+                }
+            }
+           }
+        }
+     }
+     .howto{
+         width:95%;
+         height:80vh;
+         .text{
+             max-width:90%;
+         }
+     }
+     .knowledge{
+         width:90%;
+        grid-template-columns: repeat(2, 45%);
+     }
+    .location{
+        margin:15% auto;
+       width:90%;
+       .img{
+           transform: translateY(10px);
+           .dot{
+            display: none;
+           }
+           img{
+               height:auto;
+           }
+       }
+    }
+    footer{
+       flex-direction: column;
+       display: flex;
+    }
+}
+@media (max-width:430px){
+    .howto{
+        background:none;
+        height:60vh;
+    }
+    main{
+        margin:20px auto;
+    }
+    .message{
+        width:95%;
+        div{
+            width:100%;
+        }
+    }
+    .featured-stories{
+        .carousel{
+            .image{
+                height:40vh;
+                width:60;
+                .text{
+                    transform: translateY(7em);
+                    text-align: center;
+            }
+        }
+        }
+    }
+
 }
